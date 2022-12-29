@@ -2,15 +2,19 @@
 }
 
 .disabled {
+    cursor: not-allowed;
 }
 
 .secondary {
+    background-color: gray;
+
 }
 
 .default {
 }
 
 .red {
+    background-color: red;
 }
 
 .default:hover {
