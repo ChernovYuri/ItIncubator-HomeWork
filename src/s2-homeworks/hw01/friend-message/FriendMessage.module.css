@@ -1,5 +1,4 @@
 .friendMessage {
-    position: absolute;
     width: 414px;
     height: 60px;
     left: 118px;
@@ -14,7 +13,6 @@
 }
 
 .friendImageAndText img {
-    position: absolute;
     width: 48px;
     height: 48px;
     left: 70px;
@@ -22,7 +20,6 @@
 }
 
 .friendText {
-    position: absolute;
     width: 374px;
     height: 20px;
     left: 145px;
@@ -44,7 +41,6 @@
 }
 
 .friendName {
-    position: absolute;
     width: 35px;
     height: 20px;
     left: 145px;
@@ -62,7 +58,6 @@
 }
 
 .friendMessageText {
-    position: absolute;
     width: 374px;
     height: 20px;
     left: 145px;
@@ -80,7 +75,6 @@
 }
 
 .friendTime {
-    position: absolute;
     width: 29px;
     height: 12px;
     left: 80px;

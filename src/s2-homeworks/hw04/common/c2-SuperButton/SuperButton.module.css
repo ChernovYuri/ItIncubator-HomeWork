@@ -1,4 +1,5 @@
 .button {
+
 }
 
 .disabled {
@@ -11,6 +12,8 @@
 }
 
 .default {
+    background-color: green;
+
 }
 
 .red {
