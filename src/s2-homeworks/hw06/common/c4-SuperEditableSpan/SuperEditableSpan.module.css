@@ -1,10 +1,36 @@
 .spanBlock {
+
 }
 
 .span {
+    position: absolute;
+    width: 69px;
+    height: 20px;
+    left: 104px;
+    top: 176px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+
+
+    color: #0080FF;
 }
 
 .input {
+    box-sizing: border-box;
+
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    border: 1px solid #D1D1D1;
+    border-radius: 5px;
 }
 
 .pen {

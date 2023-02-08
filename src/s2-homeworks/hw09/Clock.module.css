@@ -1,10 +1,93 @@
 .buttonsContainer {
 }
+.button {
+    justify-content: center;
+    align-items: center;
+    padding: 5px 24px;
+    gap: 10px;
+    margin: 5px;
+    width: 84px;
+    height: 30px;
+    left: 70px;
+    top: 1476px;
+
+    /* Primary/100 */
+
+    background: #0066CC;
+    border-radius: 3px;
+    border: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+
+
+    /* Light /140 */
+
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.buttonDisabled {
+    opacity: 0.4;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 24px;
+    gap: 10px;
+    margin: 5px;
+    width: 84px;
+    height: 30px;
+    left: 70px;
+    top: 1476px;
+
+    /* Primary/100 */
+
+    background: #0066CC;
+    border-radius: 3px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+
+
+    /* Light /140 */
+
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
 
 .clock {
 }
 
 .watch {
+    width: 174px;
+    height: 24px;
+    left: 70px;
+    top: 1397px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #000000;
 }
 
 .watch strong {

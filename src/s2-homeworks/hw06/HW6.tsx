@@ -26,7 +26,7 @@ const HW6 = () => {
     return (
         <div id={'hw6'}>
             <div className={s2.hwTitle}>Homework #6</div>
-
+            <hr/>
             {/*демонстрация возможностей компоненты:*/}
             <div className={s2.hw}>
                 <div className={s.editableSpanContainer}>
@@ -36,17 +36,17 @@ const HW6 = () => {
                         onChangeText={setValue}
                         spanProps={{
                             id: 'hw6-editable-span',
-                            defaultText: 'enter text...',
+                            defaultText: 'Edit text',
                         }}
                     />
                 </div>
 
                 <div className={s.buttonsContainer}>
-                    <SuperButton id={'hw6-save'} onClick={save}>
+                    <SuperButton id={s['hw6-save']} onClick={save}>
                         Save to ls
                     </SuperButton>
                     <SuperButton
-                        id={'hw6-restore'}
+                        id={s['hw6-restore']}
                         onClick={restore}
                         xType={'secondary'}
                     >

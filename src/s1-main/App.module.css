@@ -5,6 +5,43 @@
 .hw {
 
 }
+.hw .superButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 24px;
+    gap: 10px;
+
+    position: absolute;
+    width: 141px;
+    height: 30px;
+    left: 73px;
+    top: 186px;
+
+    /* Primary/100 */
+
+    background: #0066CC;
+    border-radius: 3px;
+    border: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+
+
+    /* Light /140 */
+
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
 
 .hwTitle {
 
