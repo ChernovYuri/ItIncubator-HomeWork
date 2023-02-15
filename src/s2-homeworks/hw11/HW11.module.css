@@ -1,7 +1,10 @@
 .container {
+    margin-top: 20px;
 }
 
 .wrapper {
+    margin-left: 50px;
+    width: 20%;
 }
 
 .number {
