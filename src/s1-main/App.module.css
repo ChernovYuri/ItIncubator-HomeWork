@@ -3,7 +3,7 @@
 }
 
 .hw {
-    margin-bottom: 80px;
+    margin: 0 0 80px 70px;
 }
 .hw .superButton {
     display: flex;
@@ -44,5 +44,10 @@
 }
 
 .hwTitle {
-
+    width: 173px;
+    height: 27px;
+    margin: 0 0 10px 70px;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
 }

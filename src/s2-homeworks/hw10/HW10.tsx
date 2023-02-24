@@ -3,7 +3,7 @@ import {useDispatch, useSelector} from 'react-redux'
 import SuperButton from '../hw04/common/c2-SuperButton/SuperButton'
 import s2 from '../../s1-main/App.module.css'
 import {Loader} from './Loader'
-import {initStateType, loadingAC} from "./bll/loadingReducer";
+import {loadingType, loadingAC} from "./bll/loadingReducer";
 import {AppStoreType} from "./bll/store";
 
 /*
@@ -15,7 +15,7 @@ import {AppStoreType} from "./bll/store";
 
 const HW10 = () => {
     // useSelector, useDispatch // пишет студент
-    const loading = useSelector<AppStoreType, initStateType>(state => state.loading)
+    const loading = useSelector<AppStoreType, loadingType>(state => state.loading)
     const dispatch = useDispatch()
     const setLoading = () => { // пишет студент // показать крутилку на 1,5 секунд
         // dispatch
