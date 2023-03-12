@@ -7,6 +7,7 @@ import success200 from './images/200.svg'
 import error400 from './images/400.svg'
 import error500 from './images/500.svg'
 import errorUnknown from './images/error.svg'
+import {log} from "util";
 
 /*
 * 1 - дописать функцию send
@@ -19,6 +20,10 @@ const HW13 = () => {
     const [text, setText] = useState('')
     const [info, setInfo] = useState('')
     const [image, setImage] = useState('')
+
+    const disabled = () => {
+        return info === '...loading'
+    }
 
     const send = (x?: boolean | null) => () => {
         const url =
@@ -37,18 +42,38 @@ const HW13 = () => {
                 setCode('Код 200!')
                 setImage(success200)
                 // дописать
-
+                setText('...всё ок)')
+                setInfo('код 200 - обычно означает что скорее всего всё ок)')
             })
             .catch((e) => {
                 // дописать
-
+                console.log(e)
+                console.log(url)
+                if (e.response.status === 400) {
+                    setCode("Код 400")
+                    setImage(error400)
+                    setText('Ты не отправил success в body вообще!')
+                    setInfo('ошибка 400 - обычно означает что скорее всего фронт отправил что-то не то на бэк!')
+                }
+                else if (e.response.status === 500) {
+                    setCode("Код 500")
+                    setImage(error500)
+                    setText('эмитация ошибки на сервере')
+                    setInfo('ошибка 500 - обычно означает что что-то сломалось на сервере, например база данных)')
+                }
+                else {
+                    setCode("Error!")
+                    setImage(errorUnknown)
+                    setText('Network Error')
+                    setInfo('AxiosError')
+                }
             })
     }
 
     return (
         <div id={'hw13'}>
             <div className={s2.hwTitle}>Homework #13</div>
-
+            <hr/>
             <div className={s2.hw}>
                 <div className={s.buttonsContainer}>
                     <SuperButton
@@ -56,7 +81,7 @@ const HW13 = () => {
                         onClick={send(true)}
                         xType={'secondary'}
                         // дописать
-
+                        disabled={disabled()}
                     >
                         Send true
                     </SuperButton>
@@ -65,7 +90,7 @@ const HW13 = () => {
                         onClick={send(false)}
                         xType={'secondary'}
                         // дописать
-
+                        disabled={disabled()}
                     >
                         Send false
                     </SuperButton>
@@ -74,7 +99,7 @@ const HW13 = () => {
                         onClick={send(undefined)}
                         xType={'secondary'}
                         // дописать
-
+                        disabled={disabled()}
                     >
                         Send undefined
                     </SuperButton>
@@ -83,7 +108,7 @@ const HW13 = () => {
                         onClick={send(null)} // имитация запроса на не корректный адрес
                         xType={'secondary'}
                         // дописать
-
+                        disabled={disabled()}
                     >
                         Send null
                     </SuperButton>
